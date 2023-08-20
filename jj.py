@@ -1,11 +1,11 @@
 from tqdm import tqdm , trange
 import time
 
-print("[INTERNET ONLINE.... !]")
+print("\033[1;36m.[INTERNET ONLINE.... !]")
 
 time.sleep(5)
 
-print("[CHECKING SOME ERRORS.....]")
+print("\033[1;36m.[CHECKING SOME ERRORS.... !]")
 
 time.sleep(5)
 
@@ -57,14 +57,15 @@ for i  in range(3):
         continue
 
 def menu():
-    print("[1] FACEBOOK")
-    print("[2] INSTAGRAM]")
-    print("[3] HACK 2K13")
-    print("[0] ALMIGHTY EMPIRE EXIT")
+    print("\033[1;31m[1] \033[1;35mFACEBOOK")
+    print("\033[1;31m[2] \033[1;35mINSTAGRAM]")
+    print("\033[1;31m[3] \033[1;35mHACK 2K13")
+    print("\033[1;31m[4] \033[1;35mBAN NUMBER")
+    print("\033[1;31m[0] \033[1;35mALMIGHTY EMPIRE EXIT")
 
 
 menu()
-option = int(input("Enter your option : "))   
+option = int(input("\033[1;32mEnter your option : "))   
 
 
 while option != 0:
@@ -74,11 +75,29 @@ while option != 0:
         print("hello world")
     elif option == 3:
         print("btw who")
+    elif option == 4:
+        number = input("Enter victim's number : ")
+        number = input("Conform the number : ")
+        conform = input("Are you conform to ban this number y/n : ")
+        while conform.lower() not in ("y", "n"):
+             conform = input("Are you conform to ban this number y/n : ")
+        if conform == "n":
+            print()
+            print("canceled ban !!")
+            break
+        if conform == "y":
+            print()
+            print("banning the number will take up to 2 minutes !!")
+
+            time.sleep(50)
+
+            print("number banned succesfully")
+            break
     else:
         print("Invalid option")
 
     print()
     menu()
-    option = int(input("Enter your option : "))           
+    option = int(input("\033[1;32mEnter your option : "))           
 
 print("Exited")    
