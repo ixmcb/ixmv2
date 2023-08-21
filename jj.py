@@ -3,7 +3,8 @@ import time
 import os
 import sys
 
-clear
+clear = lambda: os.system('cls')
+clear()
 
 print("\033[1;36m.[INTERNET ONLINE.... !]")
 
