@@ -2,7 +2,6 @@ from tqdm import tqdm , trange
 import time
 import os
 import sys
-import winsound
 
 clear = lambda: os.system('cls')
 clear()
@@ -15,7 +14,6 @@ print("\033[1;36m.[CHECKING SOME ERRORS.... !]")
 
 time.sleep(5)
 
-winsound.PlaySound('godzila.wav', 0)
 
 with tqdm(total=100) as pbar:
     for i in range(10):
@@ -61,7 +59,7 @@ else:
 
 def menu():
     print("\033[1;31m[1] \033[1;35mFACEBOOK")
-    print("\033[1;31m[2] \033[1;35mINSTAGRAM]")
+    print("\033[1;31m[2] \033[1;35mINSTAGRAM")
     print("\033[1;31m[3] \033[1;35mHACK 2K13")
     print("\033[1;31m[4] \033[1;35mBAN NUMBER")
     print("\033[1;31m[5] \033[1;35mPROTECT NUMBER")
@@ -76,9 +74,25 @@ while option != 0:
     if option == 1:
         print("FACEBOOK methods for jacking account first download password reset from our official app and then send requste to owner and then read the rules how to jack and boom !")
     elif option == 2:
-        print("hello world")
+        instagram = input("Enter target account with @ : ")
+        instagram = input("conform the target withouy @ : ")
+        conf = input("Are you ready to mass report y/n : ")
+        while conf.lower() not in ("y", "n"):
+            conf = input("Are you ready to mass report y/n : ")
+        if conf == "n":
+            print()
+            print("canceled mass report"+instagram)
+            break
+        if conf == "y":
+            print("")
+            print("mass reporting .....")
+
+            time.sleep(50)
+
+            print("The account has been mass reported now make method to ban it !")
+            break
     elif option == 3:
-        print("btw who")
+        print("paid")
     elif option == 4:
         number = input("Enter victim's number : ")
         number = input("Conform the number : ")
@@ -98,7 +112,7 @@ while option != 0:
             print("number banned succesfully")
             break
     elif option == 5:
-        print("DOIN IT FOR PAID")
+        print("DOING IT FOR PAID")
     else:
         print("Invalid option")
 
