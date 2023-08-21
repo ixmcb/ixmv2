@@ -1,5 +1,10 @@
 from tqdm import tqdm , trange
 import time
+import os
+import sys
+
+clear = lambda: os.system('cls')
+clear()
 
 print("\033[1;36m.[INTERNET ONLINE.... !]")
 
@@ -44,23 +49,20 @@ print("                                          [ALMIGHTY EMPIRE TEAM TOLLS !!]
 name = input("What is your name : ")
 
 
-password ="hty"
+password = input("Enter the passowrd : ")
 
-for i  in range(3):
-    pwd = input("Enter the passowrd to contunue : ")
-    j=3
-    if(pwd==password) :
-        print(" WELCOME "+name)
-        break 
-    else:
-        print("Incorrect passowrd sorry try again chances left =",j-1)
-        continue
+if password == "hty":
+    print(" WELCOME"+   name)
+else:
+    print("Sorry try again !")
+    sys.exit(666)
 
 def menu():
     print("\033[1;31m[1] \033[1;35mFACEBOOK")
     print("\033[1;31m[2] \033[1;35mINSTAGRAM]")
     print("\033[1;31m[3] \033[1;35mHACK 2K13")
     print("\033[1;31m[4] \033[1;35mBAN NUMBER")
+    print("\033[1;31m[5] \033[1;35mPROTECT NUMBER")
     print("\033[1;31m[0] \033[1;35mALMIGHTY EMPIRE EXIT")
 
 
@@ -93,6 +95,8 @@ while option != 0:
 
             print("number banned succesfully")
             break
+    elif option == 5:
+        print("DOIN IT FOR PAID")
     else:
         print("Invalid option")
 
