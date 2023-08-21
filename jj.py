@@ -2,6 +2,7 @@ from tqdm import tqdm , trange
 import time
 import os
 import sys
+import winsound
 
 clear = lambda: os.system('cls')
 clear()
@@ -14,6 +15,7 @@ print("\033[1;36m.[CHECKING SOME ERRORS.... !]")
 
 time.sleep(5)
 
+winsound.PlaySound('godzila.wav', 0)
 
 with tqdm(total=100) as pbar:
     for i in range(10):
