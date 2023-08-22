@@ -28,28 +28,29 @@ with tqdm(total=100) as pbar:
 
 
 logo = '''
-  \033[1;37m ######   ##      ##  ###  #######  #######  ###  ##  #######  ##  ### 
- \033[1;34m ##  ##   ##      #######    ###    ##   ##  ###  ##    ###    ##  ### 
- \033[1;34m ##  ##   ##      #######    ###    ##       ###  ##    ###    ##  ### 
- \033[1;34m #######  ###      ### ###    ###    ## ####  #######    ###    ####### 
- \033[1;34m ###  ##  ###      ##  ###    ###    ##  ###  ###  ##    ###      ###   
- \033[1;34m ###  ##  ###      ##  ###    ###    ##  ###  ###  ##    ###      ###   
- \033[1;37m ###  ##  ######   ##  ###  #######  #######  ###  ##    ###      ###   
+\033[1;36m. $$$$$$\  $$\       $$\      $$\ $$$$$$\  $$$$$$\  $$\   $$\ $$$$$$$$\ $$\     $$\ 
+\033[1;31m.$$  __$$\ $$ |      $$$\    $$$ |\_$$  _|$$  __$$\ $$ |  $$ |\__$$  __|\$$\   $$  |
+\033[1;31m.$$ /  $$ |$$ |      $$$$\  $$$$ |  $$ |  $$ /  \__|$$ |  $$ |   $$ |    \$$\ $$  / 
+\033[1;31m.$$$$$$$$ |$$ |      $$\$$\$$ $$ |  $$ |  $$ |$$$$\ $$$$$$$$ |   $$ |     \$$$$  /  
+\033[1;31m.$$  __$$ |$$ |      $$ \$$$  $$ |  $$ |  $$ |\_$$ |$$  __$$ |   $$ |      \$$  /   
+\033[1;31m.$$ |  $$ |$$ |      $$ |\$  /$$ |  $$ |  $$ |  $$ |$$ |  $$ |   $$ |       $$ |    
+\033[1;31m.$$ |  $$ |$$$$$$$$\ $$ | \_/ $$ |$$$$$$\ \$$$$$$  |$$ |  $$ |   $$ |       $$ |    
+\033[1;36m.\__|  \__|\________|\__|     \__|\______| \______/ \__|  \__|   \__|       \__|  
                                                                         
 
 '''
 print(logo)
-print("                                          [ALMIGHTY EMPIRE TEAM TOLLS !!]")
+print("                                          [ALMIGHTY EMPIRE TEAM TOLLS VERISON 3.4 !!]")
 
 
 
 
 
 
-name = input("What is your name : ")
+name = input("[-] What is your name : ")
 
 
-password = input("Enter the passowrd : ")
+password = input("[-] Enter the passowrd : ")
 
 if password == "hty":
     print(" WELCOME"+   name)
@@ -63,11 +64,12 @@ def menu():
     print("\033[1;31m[3] \033[1;35mHACK 2K13")
     print("\033[1;31m[4] \033[1;35mBAN NUMBER")
     print("\033[1;31m[5] \033[1;35mPROTECT NUMBER")
+    print("\033[1;31m[6] \033[1;35mABOUT")
     print("\033[1;31m[0] \033[1;35mALMIGHTY EMPIRE EXIT")
 
 
 menu()
-option = int(input("\033[1;32mEnter your option : "))   
+option = int(input("\033[1;32m[-] Enter your option : "))   
 
 
 while option != 0:
@@ -113,11 +115,13 @@ while option != 0:
             break
     elif option == 5:
         print("DOING IT FOR PAID")
+    elif option == 6:
+        print("THE TOLLS IS FOR FUN AND MAKE SURE TO USE THEM AS FUN ONLY. THE TOLLS ARE MAINLY FOR BAN A NUMBER MASS REP ON INSTARAM AND MANY MORE ADD SOON IN VERISON 3.5.TOLLS MADE BY IXMCB")
     else:
         print("Invalid option")
 
     print()
     menu()
-    option = int(input("\033[1;32mEnter your option : "))           
+    option = int(input("\033[1;32m[-] Enter your option : "))           
 
 print("Exited")    
