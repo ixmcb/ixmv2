@@ -59,12 +59,11 @@ else:
     sys.exit(666)
 
 def menu():
-    print("\033[1;31m[1] \033[1;35mFACEBOOK")
+    print("\033[1;31m[1] \033[1;35mFACEBOOK                   [6] ABOUT")
     print("\033[1;31m[2] \033[1;35mINSTAGRAM")
     print("\033[1;31m[3] \033[1;35mHACK 2K13")
     print("\033[1;31m[4] \033[1;35mBAN NUMBER")
     print("\033[1;31m[5] \033[1;35mPROTECT NUMBER")
-    print("\033[1;31m[6] \033[1;35mABOUT")
     print("\033[1;31m[0] \033[1;35mALMIGHTY EMPIRE EXIT")
 
 
