@@ -6,11 +6,11 @@ import sys
 clear = lambda: os.system('cls')
 clear()
 
-print("\033[1;36m.[INTERNET ONLINE.... !]")
+print("\033[1;36m[ X ] 🇮​🇳​🇸​🇹​🇱​🇮​🇳​🇬​ 🇫​🇮​🇱​🇪​🇸​ ")
 
 time.sleep(5)
 
-print("\033[1;36m.[CHECKING SOME ERRORS.... !]")
+print("\033[1;36m[ X ] 🇫​🇮​🇱​🇪​🇸​ 🇸​🇪​🇨​🇺​🇷​🇪​🇩​ 🇮​🇳​ 🇫​🇴​🇱​🇽​ ")
 
 time.sleep(5)
 
@@ -19,10 +19,6 @@ with tqdm(total=100) as pbar:
     for i in range(10):
         time.sleep(0.3)
         pbar.update(10)
-
-
-
-
 
 
 
@@ -40,20 +36,20 @@ logo = '''
 
 '''
 print(logo)
-print("                                          [ALMIGHTY EMPIRE TEAM TOLLS VERISON 3.4 !!]")
+print("                                       [ALMIGHTY EMPIRE TEAM TOLLS VERISON 3.4 !!]")
 
 
 
 
 
 
-name = input("[-] What is your name : ")
+name = input("[ - ] 𝑾𝑯𝑨𝑻 𝑰𝑺 𝒀𝑶𝑼𝑹 𝑵𝑨𝑴𝑬 : ")
 
 
-password = input("[-] Enter the passowrd : ")
+password = input("[ - ] 𝗘𝗡𝗧𝗘𝗥 𝗧𝗛𝗘 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗 : ")
 
 if password == "hty":
-    print(" WELCOME"+   name)
+    print(" WELCOME "+   name)
 else:
     print("Sorry try again !")
     sys.exit(666)
@@ -68,7 +64,7 @@ def menu():
 
 
 menu()
-option = int(input("\033[1;32m[-] Enter your option : "))   
+option = int(input("\033[1;32m[ + ] ᴇɴᴛᴇʀ ᴛʜᴇ ᴏᴘᴛɪᴏɴ : "))   
 
 
 while option != 0:
@@ -117,10 +113,10 @@ while option != 0:
     elif option == 6:
         print("THE TOLLS IS FOR FUN AND MAKE SURE TO USE THEM AS FUN ONLY. THE TOLLS ARE MAINLY FOR BAN A NUMBER MASS REP ON INSTARAM AND MANY MORE ADD SOON IN VERISON 3.5.TOLLS MADE BY IXMCB")
     else:
-        print("Invalid option")
+        print("[ ! ] INVALID OPTION ")
 
     print()
     menu()
-    option = int(input("\033[1;32m[-] Enter your option : "))           
+    option = int(input("\033[1;32m[ + ] ᴇɴᴛᴇʀ ᴛʜᴇ ᴏᴘᴛɪᴏɴ : "))           
 
 print("Exited")    
