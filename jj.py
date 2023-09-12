@@ -6,11 +6,11 @@ import sys
 clear = lambda: os.system('cls')
 clear()
 
-print("\033[1;36m[ X ] 🇮​🇳​🇸​🇹​🇱​🇮​🇳​🇬​ 🇫​🇮​🇱​🇪​🇸​ ")
+print("\033[1;36m[ X ] Finding latest server​ ")
 
 time.sleep(5)
 
-print("\033[1;36m[ X ] 🇫​🇮​🇱​🇪​🇸​ 🇸​🇪​🇨​🇺​🇷​🇪​🇩​ 🇮​🇳​ 🇫​🇴​🇱​🇽​ ")
+print("\033[1;36m[ X ] Server connected and saved in folx ")
 
 time.sleep(5)
 
@@ -24,43 +24,44 @@ with tqdm(total=100) as pbar:
 
 
 logo = '''
-\033[1;36m. $$$$$$\  $$\       $$\      $$\ $$$$$$\  $$$$$$\  $$\   $$\ $$$$$$$$\ $$\     $$\ 
-\033[1;31m.$$  __$$\ $$ |      $$$\    $$$ |\_$$  _|$$  __$$\ $$ |  $$ |\__$$  __|\$$\   $$  |
-\033[1;31m.$$ /  $$ |$$ |      $$$$\  $$$$ |  $$ |  $$ /  \__|$$ |  $$ |   $$ |    \$$\ $$  / 
-\033[1;31m.$$$$$$$$ |$$ |      $$\$$\$$ $$ |  $$ |  $$ |$$$$\ $$$$$$$$ |   $$ |     \$$$$  /  
-\033[1;31m.$$  __$$ |$$ |      $$ \$$$  $$ |  $$ |  $$ |\_$$ |$$  __$$ |   $$ |      \$$  /   
-\033[1;31m.$$ |  $$ |$$ |      $$ |\$  /$$ |  $$ |  $$ |  $$ |$$ |  $$ |   $$ |       $$ |    
-\033[1;31m.$$ |  $$ |$$$$$$$$\ $$ | \_/ $$ |$$$$$$\ \$$$$$$  |$$ |  $$ |   $$ |       $$ |    
-\033[1;36m.\__|  \__|\________|\__|     \__|\______| \______/ \__|  \__|   \__|       \__|  
+
+|\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
+|                                                                                    |
+|           DEVLOPER : IXMCB                                                         |         
+|                                                       TEAM IXM WP TOOLS V 3.5      |
+|           PROGRAM : WP LOCK V 3.5                                                  |      
+|                                                                                    |         
+|           GITHUB : https://github.com/ixmcb/reed                                   |  
+|                                                                                    |
+|/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
                                                                         
 
 '''
 print(logo)
-print("                                       [ALMIGHTY EMPIRE TEAM TOLLS VERISON 3.4 !!]")
+print("                                          [TEAM IXM V 3.5 WP LOCKS]")
 
 
 
 
 
+name = input("[ \033[1;31m- \033[1;36m] What iS your Name : ")
 
-name = input("[ - ] 𝑾𝑯𝑨𝑻 𝑰𝑺 𝒀𝑶𝑼𝑹 𝑵𝑨𝑴𝑬 : ")
 
-
-password = input("[ - ] 𝗘𝗡𝗧𝗘𝗥 𝗧𝗛𝗘 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗 : ")
+password = input("[ \033[1;31m- \033[1;36m] Enter the password : ")
 
 if password == "hty":
-    print(" WELCOME "+   name)
+    print(" Welcome "+   name)
 else:
     print("Sorry try again !")
     sys.exit(666)
 
 def menu():
-    print("\033[1;31m[1] \033[1;35mFACEBOOK                   [6] ABOUT")
-    print("\033[1;31m[2] \033[1;35mINSTAGRAM")
-    print("\033[1;31m[3] \033[1;35mHACK 2K13")
-    print("\033[1;31m[4] \033[1;35mBAN NUMBER")
-    print("\033[1;31m[5] \033[1;35mPROTECT NUMBER")
-    print("\033[1;31m[0] \033[1;35mALMIGHTY EMPIRE EXIT")
+    print("\033[1;31m[ \033[1;34m1 \033[1;31m] \033[1;35mFACEBOOK                   [6] ABOUT")
+    print("\033[1;31m[ \033[1;34m2 \033[1;31m] \033[1;35mINSTAGRAM")
+    print("\033[1;31m[ \033[1;34m3 \033[1;31m] \033[1;35mHACK 2K13")
+    print("\033[1;31m[ \033[1;34m4 \033[1;31m] \033[1;35mBAN NUMBER")
+    print("\033[1;31m[ \033[1;34m5 \033[1;31m] \033[1;35mPROTECT NUMBER")
+    print("\033[1;31m[ \033[1;34m0 \033[1;31m] \033[1;35mALMIGHTY EMPIRE EXIT")
 
 
 menu()
@@ -91,22 +92,24 @@ while option != 0:
     elif option == 3:
         print("paid")
     elif option == 4:
-        number = input("Enter victim's number : ")
-        number = input("Conform the number : ")
-        conform = input("Are you conform to ban this number y/n : ")
+        county = input("\033[1;34m[ \033[1;36m= ] Enter the country code + : ")
+        print(" ")
+        number = input("\033[1;34m[ \033[1;36m= ] Enter victim's number : ")
+        print(" ")
+        conform = input("\033[1;34m[ \033[1;36m0 ] Are you conform to ban this number y/n : ")
         while conform.lower() not in ("y", "n"):
-             conform = input("Are you conform to ban this number y/n : ")
+             conform = input("[ 0 ] Are you conform to ban this number y/n : ")
         if conform == "n":
             print()
             print("canceled ban !!")
             break
         if conform == "y":
-            print()
-            print("banning the number will take up to 2 minutes !!")
+            print(" ")
+            print("\033[1;34m[ \033[1;36m! ] THE NUMBER HAS STARTED PUNISHING : +"+county +number)
+            time.sleep(12)
 
-            time.sleep(50)
-
-            print("number banned succesfully")
+            print(" ")
+            print("\033[1;34m[ \033[1;36m- ] Number was locked by ixmcb tolls ")
             break
     elif option == 5:
         print("DOING IT FOR PAID")
