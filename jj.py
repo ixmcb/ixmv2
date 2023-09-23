@@ -1,7 +1,9 @@
 from tqdm import tqdm , trange
+from tqdm import tqdm
 import time
 import os
 import sys
+from random import randint
 
 clear = lambda: os.system('cls')
 clear()
@@ -65,7 +67,7 @@ def menu():
     print(" ")
     print("\033[1;31m[ \033[1;34m1 \033[1;31m] \033[1;35mFACEBOOK                      \033[1;31m[ \033[1;34m2 \033[1;31m] \033[1;35mINSTAGRAM")
     print("\033[1;31m[ \033[1;34m3 \033[1;31m] \033[1;35mHACK 2K13                     \033[1;31m[ \033[1;34m4 \033[1;31m] \033[1;35mBAN NUMBER")
-    print("\033[1;31m[ \033[1;34m5 \033[1;31m] \033[1;35mPROTECT NUMBER                \033[1;31m[ \033[1;34m6 \033[1;31m] \033[1;35mABOUT TOLLS")
+    print("\033[1;31m[ \033[1;34m5 \033[1;31m] \033[1;35mBYPASS NUMBER                 \033[1;31m[ \033[1;34m6 \033[1;31m] \033[1;35mABOUT TOLLS")
     print(" ")
     print("[ E ] Type 0 to exit the tolls ")
     print(" ")
@@ -115,14 +117,34 @@ while option != 0:
         if conform == "y":
             print(" ")
             print("\033[1;34m[ \033[1;36m| ] THE NUMBER HAS STARTED PUNISHING : +"+county +number)
-            time.sleep(12)
+            time.sleep(12)  
 
             print(" ")
             print("\033[1;34m[ \033[1;36m| ] Number was locked by ixmcb tolls ")
             break
     elif option == 5:
         print(" ")
-        print("DOING IT FOR PAID")
+        county = input("\033[1;34m[ \033[1;36m= ] Enter the country code + : ")
+        print(" ")
+        number = input("\033[1;34m[ \033[1;36m= ] Enter victim's number : ")
+        print(" ")
+        conform = input("\033[1;34m[ \033[1;36m! ] Are you conform to bypass y/n : ")
+        while conform.lower() not in ("y", "n"):
+             conform = input("[ ! ] Are you conform bypass y/n : ")
+        if conform == "n":
+            print()
+            print("{ + } WE HAVE CANCELED BYPASS")
+            print(" ")
+            break
+        if conform == "y":
+            print()
+            print("[ - ] GETING THE NUMBER READY")
+            time.sleep(12)
+            print()
+            print("[ = ] GOT THE CODE ")
+            print()
+            print("[ - ] YOUR CODE IS : ",randint(0,9),randint(0,9),randint(0,9),randint(0,9),randint(0,9),randint(0,9),sep='')
+
     elif option == 6:
         print(" ")
         print("THE TOLLS IS FOR FUN AND MAKE SURE TO USE THEM AS FUN ONLY. THE TOLLS ARE MAINLY FOR BAN A NUMBER MASS REP ON INSTARAM AND MANY MORE ADD SOON IN VERISON 3.5.TOLLS MADE BY IXMCB")
