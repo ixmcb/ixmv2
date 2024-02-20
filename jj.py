@@ -5,9 +5,12 @@ import os
 import sys
 from random import randint
 from time import sleep
+import platform
 
-clear = lambda: os.system('cls')
-clear()
+if platform.system() == "Windows":
+    os.system('cls')
+else:
+    os.system('clear')
 
 print("\033[1;36m[ X ] Connecting To Server​ ")
 
@@ -23,9 +26,10 @@ with tqdm(total=100) as pbar:
         time.sleep(0.3)
         pbar.update(10)
 
-clear = lambda: os.system('cls')
-clear()
-
+if platform.system() == "Windows":
+    os.system('cls')
+else:
+    os.system('clear')
 
 logo = '''
 |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
@@ -80,14 +84,18 @@ option = int(input("\033[1;32m----> Enter The Suitable Option >>> "))
 
 while option != 0:
     if option == 1:
-        clear = lambda: os.system('cls')
-        clear()   
+        if platform.system() == "Windows":
+             os.system('cls')
+        else:
+            os.system('clear')
         print(logo)
         county = input("[ - ] Enter The Country Code >>> " )
         number = input("[ - ] Enter The Number >>> ")
         print("")
-        clear = lambda: os.system('cls')
-        clear()
+        if platform.system() == "Windows":
+            os.system('cls')
+        else:
+            os.system('clear')
         print(logo)
         for x in range(1,11):
             for i in ("\\", "|", "/", "-"):
@@ -105,8 +113,10 @@ while option != 0:
             print('')
             print("Conformation Denied")
         if conform == "y":
-            clear = lambda: os.system('cls')
-            clear()
+            if platform.system() == "Windows":
+                os.system('cls')
+            else:
+                os.system('clear')
             print(logo)
             for x in range(1,11):
                 for i in ("\\", "|", "/", "-"):
@@ -120,8 +130,10 @@ while option != 0:
         time.sleep(8)
     elif option == 2:
         print(" ")
-        clear = lambda: os.system('cls')
-        clear()
+        if platform.system() == "Windows":
+            os.system('cls')
+        else:
+            os.system('clear')
         for x in range(1,11):
             for i in ("\\", "|", "/", "-"):
                 sleep(0.2)
@@ -132,8 +144,10 @@ while option != 0:
                     print("---- Finding The Latest Update "+i,end='\r')
         print("No Updates Found")
         time.sleep(4)
-        clear = lambda: os.system('cls')
-        clear()
+        if platform.system() == "Windows":
+            os.system('cls')
+        else:
+            os.system('clear')
         print(logo)
     elif option == 3:
         print(" This Tool Is For Ethical Puroposes Made By Thor . We Are Working On V.15 Thank You .")
